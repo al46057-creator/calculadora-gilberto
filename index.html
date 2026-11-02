@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calculator">
+
+        <header>
+            <p class="eyebrow">CALCULADORA</p>
+            <h1>Operaciones básicas</h1>
+            <p class="subtitle">Realiza tus cálculos de forma sencilla</p>
+        </header>
+
+        <section class="display" aria-live="polite">
+            <span id="operation">Listo para calcular</span>
+            <output id="result">0</output>
+        </section>
+
+        <section class="inputs">
+
+            <label for="number1">Primer número</label>
+            <input type="number" id="number1"
+                placeholder="Escribe un número" step="any">
+
+            <label for="number2">Segundo número</label>
+            <input type="number" id="number2"
+                placeholder="Escribe otro número" step="any">
+
+        </section>
+
+        <section class="buttons">
+
+            <button type="button" data-operation="sum">
+                ＋ <span>Sumar</span>
+            </button>
+
+            <button type="button" data-operation="subtract">
+                − <span>Restar</span>
+            </button>
+
+            <button type="button" data-operation="multiply">
+                × <span>Multiplicar</span>
+            </button>
+
+            <button type="button" data-operation="divide">
+                ÷ <span>Dividir</span>
+            </button>
+
+        </section>
+
+        <button type="button" id="clear" class="clear-button">
+            Limpiar
+        </button>
+
+        <p id="message" class="message" role="status"></p>
+
+    </main>
+
+    <footer>
+        Proyecto escolar · JavaScript, HTML y CSS
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
